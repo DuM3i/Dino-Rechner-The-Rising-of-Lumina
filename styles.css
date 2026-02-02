@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1abc9c; /* Neon Orange Hintergrund */
+    background-image: url('https://images2.alphacoders.com/134/thumb-1920-1341352.jpeg'); /* Hintergrundbild */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hintergrundbild fest positionieren */
+    color: #fff; /* Weiße Schriftfarbe */
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 36px; /* Größe des Schriftzugs */
+    text-transform: uppercase; /* Alle Buchstaben groß schreiben */
+    border: 2px solid #8e44ad; /* Dunkles Lila Rahmen */
+    border-radius: 10px; /* Abgerundete Ecken */
+    padding: 20px; /* Innenabstand des Rahmens */
+    box-sizing: border-box; /* Border-Box-Modell verwenden */
+    max-width: 90%; /* Maximale Breite der Box */
+    margin: 30px auto; /* Zentrieren der Box */
+    background-color: rgba(142, 68, 173, 0.7); /* Halbtransparente Hintergrundfarbe */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Schatten für Text */
+}
+
+#dino-container {
+    /*width: 1200px;*/
+    margin: 0 auto; /* Zentriert den Container horizontal */
+    margin-left: 240px; /* Abstand zur linken Seite für das Formular */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Zentriert die Elemente im Container */
+}
+
+
+.dino-tile {
+    border: 2px solid #8e44ad; /* Dunkles Lila Rahmen */
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-color: rgba(142, 68, 173, 0.7); /* Halbtransparente Hintergrundfarbe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten */
+}
+
+.dino-tile:hover {
+    transform: scale(1.05);
+}
+
+.dino-tile img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 30%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten */
+}
+
+.dino-tile p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form {
+    position: fixed;
+    top: 165px;
+    left: 20px;
+    max-width: 200px;
+    margin-bottom: 20px; /* Abstand zum Dino-Container */
+    padding: 20px;
+    background-color: rgba(142, 68, 173, 0.7); /* Halbtransparente Hintergrundfarbe */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="number"], button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #8e44ad; /* Dunkles Lila */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6c3483; /* Dunkleres Lila */
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.selected {
+    border: 9px solid #39ff14; /*Neon Grüner Rahmen für ausgewählte Kachel */
+}
+
+/* CSS */
+
+/* Stil für Modalfenster */
+.modal {
+    display: none; /* Standardmäßig ausgeblendet */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Halbtransparenter Hintergrund */
+}
+
+.modal-content {
+    background-color: #8e44ad; /* Lila Hintergrund */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-result {
+    color: #39ff14; /* Schwarze Schriftfarbe für das Ergebnis */
+}
+
+
+/* Weitere CSS-Stile für die Dino-Kacheln und das Formular hier */
+
