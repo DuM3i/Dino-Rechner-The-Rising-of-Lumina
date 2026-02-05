@@ -43,6 +43,7 @@ const dinos = [
     { name: "Daeodon", class: "Klasse 3",image: "https://www.dododex.com/media/creature/daeodon.png" },
     { name: "Deinosuchus", class: "Klasse 3",image: "https://www.dododex.com/media/creature/deinosuchus.png" },
     { name: "Deinotherium", class: "Klasse 4",image: "https://www.dododex.com/media/creature/deinotherium.png" },
+    { name: "Desmodus", class: "Klasse 3",image: "https://www.dododex.com/media/creature/desmodus.png" },
     { name: "Dilophosaur", class: "Klasse 1",image: "https://www.dododex.com/media/creature/dilophosaur.png" },
     { name: "Dimetrodon", class: "Klasse 1",image: "https://www.dododex.com/media/creature/dimetrodon.png" },
     { name: "Dimorphodon", class: "Klasse 1",image: "https://www.dododex.com/media/creature/dimorphodon.png" },
@@ -52,7 +53,7 @@ const dinos = [
     { name: "Direwolf", class: "Klasse 2",image: "https://www.dododex.com/media/creature/direwolf.png" },
     { name: "Dodo", class: "Klasse 1",image: "https://www.dododex.com/media/creature/dodo.png" },
     { name: "Doedicurus", class: "Klasse 2",image: "https://www.dododex.com/media/creature/doedicurus.png" },
-    { name: "Drakeling ", class: "Klasse 5",image: "https://www.dododex.com/media/creature/drakeling.png" },
+    { name: "Drakeling ", class: "Klasse 4",image: "https://www.dododex.com/media/creature/drakeling.png" },
     { name: "Dreadnoughtus ", class: "Klasse 5",image: "https://www.dododex.com/media/creature/dreadnoughtus.png" },
     { name: "Dreadmare ", class: "Klasse 4",image: "https://www.dododex.com/media/creature/dreadmare.png" },
     { name: "Dung Beetle", class: "Klasse 1",image: "https://www.dododex.com/media/creature/dungbeetle.png" },
@@ -68,7 +69,7 @@ const dinos = [
     { name: "Gacha", class: "Klasse 4",image: "https://www.dododex.com/media/creature/gacha.png" },
     { name: "Gallimimus", class: "Klasse 1",image: "https://www.dododex.com/media/creature/gallimimus.png" },
     { name: "Gasbags", class: "Klasse 2",image: "https://www.dododex.com/media/creature/gasbags.png" },
-    { name: "Giant Bison", class: "Klasse 4",image: "https://www.dododex.com/media/creature/bison.png" },
+    { name: "Giant Bison", class: "Klasse 4",image: "https://www.dododex.com/media/creature/giantbison.png" },
     { name: "Gigantoraptor", class: "Klasse 3",image: "https://www.dododex.com/media/creature/gigantoraptor.png" },
     { name: "Giganotosaurus", class: "Klasse 4",image: "https://www.dododex.com/media/creature/giganotosaurus.png" },
     { name: "Gigantopithecus", class: "Klasse 2",image: "https://www.dododex.com/media/creature/gigantopithecus.png" },
@@ -267,6 +268,7 @@ function closeModal() {
 
 // Event Listener für das Schließen des Modalfensters
 document.getElementsByClassName('close')[0].addEventListener('click', closeModal);
+
 
 
 
