@@ -29,6 +29,7 @@ const dinos = [
     { name: "Brachiosaurus", class: "Klasse 4",image: "https://ark.wiki.gg/images/thumb/5/50/Mod_AA_Brachiosaurus_PaintRegion1_ASA.png/300px-Mod_AA_Brachiosaurus_PaintRegion1_ASA.png" },
     { name: "Brontosaurus", class: "Klasse 3",image: "https://www.dododex.com/media/creature/brontosaurus.png" },
     { name: "Bulbdog", class: "Klasse 1",image: "https://www.dododex.com/media/creature/bulbdog.png" },
+    { name: "Bungartius", class: "Klasse 2",image: "https://cdn.discordapp.com/attachments/1141013025881604176/1420450799703822486/20250921014505_1.jpg?ex=69861a65&is=6984c8e5&hm=1b7c266e2e7a23ee1ff7dfc0465d5cb4bb35f84c74327c06a8722ec204778709&" },
     { name: "Carbonemys", class: "Klasse 1",image: "https://www.dododex.com/media/creature/carbonemys.png" },
     { name: "Carcharodontosaurus", class: "Klasse 4",image: "https://www.dododex.com/media/creature/carcharodontosaurus.png" }, 
     { name: "Carnotaurus", class: "Klasse 2",image: "https://www.dododex.com/media/creature/carnotaurus.png" },
@@ -268,6 +269,7 @@ function closeModal() {
 
 // Event Listener für das Schließen des Modalfensters
 document.getElementsByClassName('close')[0].addEventListener('click', closeModal);
+
 
 
 
