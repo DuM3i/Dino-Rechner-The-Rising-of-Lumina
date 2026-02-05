@@ -18,7 +18,7 @@ const dinos = [
     { name: "Araneo", class: "Klasse 1", image: "https://www.dododex.com/media/creature/araneo.png" },
     { name: "Archaeopteryx", class: "Klasse 1", image: "https://www.dododex.com/media/creature/archaeopteryx.png" }, 
     { name: "Archelon", class: "Klasse 2", image: "https://www.dododex.com/media/creature/argentavis.png" },
-    { name: "Argentavis", class: "Klasse 3", image: "https://www.dododex.com/media/creature/argentavis.png" },
+    { name: "Argentavis", class: "Klasse 3", image: "https://www.dododex.com/media/creature/archelon.png" },
     { name: "Armadoggo", class: "Klasse 3", image: "https://www.dododex.com/media/creature/armadoggo.png" },
     { name: "Arthropluera", class: "Klasse 2", image: "https://www.dododex.com/media/creature/arthropluera.png" },
     { name: "Baryonyx", class: "Klasse 3",image: "https://www.dododex.com/media/creature/baryonyx.png" },
@@ -38,8 +38,8 @@ const dinos = [
     { name: "Cosmo", class: "Klasse 2",image: "https://ark.wiki.gg/images/thumb/d/d7/Cosmo_PaintRegion1_ASA.png/2560px-Cosmo_PaintRegion1_ASA.png" },
     { name: "Cryptoclidus", class: "Klasse 2",image: "https://media.forgecdn.net/attachments/974/347/image-1.png" },
     { name: "Daeodon", class: "Klasse 3",image: "https://www.dododex.com/media/creature/daeodon.png" },
-    { name: "Deinosuchus", class: "Klasse 3",image: "https://ark.wiki.gg/images/thumb/1/1a/Mod_AA_Deinosuchus_PaintRegion4_ASA.png/300px-Mod_AA_Deinosuchus_PaintRegion4_ASA.png" },
-    { name: "Deinotherium", class: "Klasse 4",image: "https://ark.wiki.gg/images/thumb/7/70/Mod_AA_Deinotherium_M_PaintRegion1_ASA.png/300px-Mod_AA_Deinotherium_M_PaintRegion1_ASA.png" },
+    { name: "Deinosuchus", class: "Klasse 3",image: "https://www.dododex.com/media/creature/deinosuchus.png" },
+    { name: "Deinotherium", class: "Klasse 4",image: "https://www.dododex.com/media/creature/deinotherium.png" },
     { name: "Dilophosaur", class: "Klasse 1",image: "https://www.dododex.com/media/creature/dilophosaur.png" },
     { name: "Dimetrodon", class: "Klasse 1",image: "https://www.dododex.com/media/creature/dimetrodon.png" },
     { name: "Dimorphodon", class: "Klasse 1",image: "https://www.dododex.com/media/creature/dimorphodon.png" },
@@ -49,9 +49,9 @@ const dinos = [
     { name: "Direwolf", class: "Klasse 2",image: "https://www.dododex.com/media/creature/direwolf.png" },
     { name: "Dodo", class: "Klasse 1",image: "https://www.dododex.com/media/creature/dodo.png" },
     { name: "Doedicurus", class: "Klasse 2",image: "https://www.dododex.com/media/creature/doedicurus.png" },
-    { name: "Drakeling ", class: "Klasse 5",image: "https://ark.wiki.gg/images/thumb/5/52/Drakelingdossier.png/298px-Drakelingdossier.png?678bae" },
+    { name: "Drakeling ", class: "Klasse 5",image: "https://www.dododex.com/media/creature/drakeling.png" },
     { name: "Dreadnoughtus ", class: "Klasse 5",image: "https://www.dododex.com/media/creature/dreadnoughtus.png" },
-    { name: "Dreadmare ", class: "Klasse 4",image: "https://ark.wiki.gg/images/thumb/e/e4/Dreadmare_image_1.jpg/240px-Dreadmare_image_1.jpg" },
+    { name: "Dreadmare ", class: "Klasse 4",image: "https://www.dododex.com/media/creature/dreadmare.png" },
     { name: "Dung Beetle", class: "Klasse 1",image: "https://www.dododex.com/media/creature/dungbeetle.png" },
     { name: "Dunkleosteus", class: "Klasse 3",image: "https://www.dododex.com/media/creature/dunkleosteus.png" },
     { name: "Edmontonia", class: "Klasse 3",image: "https://83374.media.forgecdn.net/avatars/thumbnails/1162/806/64/64/638732083647789826.jpeg" },
@@ -62,7 +62,7 @@ const dinos = [
     { name: "Featherlight", class: "Klasse 1",image: "https://www.dododex.com/media/creature/featherlight.png" },
     { name: "Gacha", class: "Klasse 4",image: "https://www.dododex.com/media/creature/gacha.png" },
     { name: "Griffin", class: "Klasse 4",image: "https://www.dododex.com/media/creature/griffin.png" },
-    { name: "Giant Bison", class: "Klasse 4",image: "https://ark.wiki.gg/images/thumb/e/e1/ASA_Giant_Bison_Concept.jpg/240px-ASA_Giant_Bison_Concept.jpg?c5921a" },
+    { name: "Giant Bison", class: "Klasse 4",image: "https://www.dododex.com/media/creature/bison.png" },
     { name: "Gallimimus", class: "Klasse 1",image: "https://www.dododex.com/media/creature/gallimimus.png" },
     { name: "Gasbags", class: "Klasse 2",image: "https://www.dododex.com/media/creature/gasbags.png" },
     { name: "Gigantoraptor", class: "Klasse 3",image: "https://www.dododex.com/media/creature/gigantoraptor.png" },
@@ -256,5 +256,6 @@ function closeModal() {
 
 // Event Listener für das Schließen des Modalfensters
 document.getElementsByClassName('close')[0].addEventListener('click', closeModal);
+
 
 
