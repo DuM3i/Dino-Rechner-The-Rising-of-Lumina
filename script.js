@@ -17,7 +17,7 @@ const dinos = [
     { name: "Anomalocaris",class: "Klasse 3", image: "https://83374.media.forgecdn.net/avatars/thumbnails/971/889/64/64/638473845315173887.jpeg" },
     { name: "Araneo", class: "Klasse 1", image: "https://www.dododex.com/media/creature/araneo.png" },
     { name: "Archaeopteryx", class: "Klasse 1", image: "https://www.dododex.com/media/creature/archaeopteryx.png" }, 
-    { name: "Archelon", class: "Klasse 2", image: "https://www.dododex.com/media/creature/archelon.png" },
+    { name: "Archelon", class: "Klasse 2", image: "https://www.dododex.com/media/creature/argentavis.png" },
     { name: "Argentavis", class: "Klasse 3", image: "https://www.dododex.com/media/creature/argentavis.png" },
     { name: "Armadoggo", class: "Klasse 3", image: "https://www.dododex.com/media/creature/armadoggo.png" },
     { name: "Arthropluera", class: "Klasse 2", image: "https://www.dododex.com/media/creature/arthropluera.png" },
@@ -256,4 +256,5 @@ function closeModal() {
 
 // Event Listener für das Schließen des Modalfensters
 document.getElementsByClassName('close')[0].addEventListener('click', closeModal);
+
 
