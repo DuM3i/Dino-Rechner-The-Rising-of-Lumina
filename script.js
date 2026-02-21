@@ -211,9 +211,14 @@ function calculateCost() {
     const classData = klassen[dinoClass];
     const basePrice = classData.punkte;
 
-    // Spezial-Dinos definieren
-    const specialDinos = ["Aureliax", "Deinonychus"];
-    let threshold = specialDinos.includes(dinoName) ? 27 : 40;
+    // Schwellenwert je nach Kreatur bestimmen
+    let threshold = 40;
+
+    if (["Aureliax", "Deinonychus"].includes(dinoName)) {
+        threshold = 27;
+    } else if (["Wyvern", "Magmasaur"].includes(dinoName)) {
+        threshold = 32;
+    }
 
     const health = parseInt(document.getElementById('health').value);
     const stamina = parseInt(document.getElementById('stamina').value);
@@ -230,17 +235,17 @@ function calculateCost() {
     totalCost += calculateAttributeCost(food, castrated, classData, threshold);
     totalCost += calculateAttributeCost(weight, castrated, classData, threshold);
 
-    // Berechnung von health und damage und verdoppeln
+    // Health & Damage verdoppeln
     let healthCost = calculateAttributeCost(health, castrated, classData, threshold);
     let damageCost = calculateAttributeCost(damage, castrated, classData, threshold);
     
-    healthCost *= 2; // Health verdoppeln
-    damageCost *= 2; // Damage verdoppeln
+    healthCost *= 2;
+    damageCost *= 2;
 
     totalCost += healthCost + damageCost;
 
     if (castrated) {
-        totalCost /= 2; // Den Preis durch 2 teilen, wenn kastriert
+        totalCost /= 2;
     }
 
     return totalCost;
@@ -278,6 +283,7 @@ function closeModal() {
 
 // Event Listener für das Schließen des Modalfensters
 document.getElementsByClassName('close')[0].addEventListener('click', closeModal);
+
 
 
 
