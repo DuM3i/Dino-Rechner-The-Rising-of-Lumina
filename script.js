@@ -207,8 +207,13 @@ function calculateCost() {
     }
 
     const dinoClass = selectedDino.getAttribute('data-class');
+    const dinoName = selectedDino.getAttribute('data-name');
     const classData = klassen[dinoClass];
     const basePrice = classData.punkte;
+
+    // Spezial-Dinos definieren
+    const specialDinos = ["Aureliax", "Deinonychus"];
+    let threshold = specialDinos.includes(dinoName) ? 27 : 40;
 
     const health = parseInt(document.getElementById('health').value);
     const stamina = parseInt(document.getElementById('stamina').value);
@@ -219,18 +224,20 @@ function calculateCost() {
     const castrated = document.getElementById('castrated').checked;
 
     let totalCost = basePrice;
-    totalCost += calculateAttributeCost(stamina, castrated, classData);
-    totalCost += calculateAttributeCost(oxygen, castrated, classData);
-    totalCost += calculateAttributeCost(food, castrated, classData);
-    totalCost += calculateAttributeCost(weight, castrated, classData);
-// Berechnung von health und damage und verdoppeln
-    let healthCost = calculateAttributeCost(health, castrated, classData);
-    let damageCost = calculateAttributeCost(damage, castrated, classData);
+
+    totalCost += calculateAttributeCost(stamina, castrated, classData, threshold);
+    totalCost += calculateAttributeCost(oxygen, castrated, classData, threshold);
+    totalCost += calculateAttributeCost(food, castrated, classData, threshold);
+    totalCost += calculateAttributeCost(weight, castrated, classData, threshold);
+
+    // Berechnung von health und damage und verdoppeln
+    let healthCost = calculateAttributeCost(health, castrated, classData, threshold);
+    let damageCost = calculateAttributeCost(damage, castrated, classData, threshold);
     
     healthCost *= 2; // Health verdoppeln
     damageCost *= 2; // Damage verdoppeln
 
-    totalCost += healthCost + damageCost; // Addiere verdoppeltes Health und Damage zum Endpreis
+    totalCost += healthCost + damageCost;
 
     if (castrated) {
         totalCost /= 2; // Den Preis durch 2 teilen, wenn kastriert
@@ -239,14 +246,13 @@ function calculateCost() {
     return totalCost;
 }
 
-function calculateAttributeCost(value, castrated, classData) {
+function calculateAttributeCost(value, castrated, classData, threshold) {
     const factor = castrated ? classData.faktorKastriert : classData.faktorUnkastriert;
-    if dino.name = Aureliax
-        return test
-    if (value <= 40) {
+    
+    if (value <= threshold) {
         return 0;
     } else {
-        return (value - 40) * factor;
+        return (value - threshold) * factor;
     }
 }
 
@@ -272,6 +278,7 @@ function closeModal() {
 
 // Event Listener für das Schließen des Modalfensters
 document.getElementsByClassName('close')[0].addEventListener('click', closeModal);
+
 
 
 
