@@ -241,6 +241,8 @@ function calculateCost() {
 
 function calculateAttributeCost(value, castrated, classData) {
     const factor = castrated ? classData.faktorKastriert : classData.faktorUnkastriert;
+    if dino.name = Aureliax
+        return test
     if (value <= 40) {
         return 0;
     } else {
@@ -270,6 +272,7 @@ function closeModal() {
 
 // Event Listener für das Schließen des Modalfensters
 document.getElementsByClassName('close')[0].addEventListener('click', closeModal);
+
 
 
 
